@@ -1,0 +1,93 @@
+.header {
+	font-family: "OpenSans";
+	height: 100px;
+	padding: 20px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__brand {
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		display: block;
+		margin-right: 26px;
+	}
+	&__descr {
+		color: #0096dc;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	&__call {
+		outline: 0 none !important;
+		text-align: left;
+		height: 60px;
+		width: 170px;
+		border: 2px solid #55a831;
+		border-radius: 8px;
+		background: url('../../img/icons/edit.png') 13px 13px no-repeat;
+		color: #55a831;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 5px 0;
+		padding-left: 55px;
+		text-transform: uppercase;
+		transition: .5s;
+		&:hover{
+			background: #0e0e0e url('../../img/icons/edit.png') 13px 13px no-repeat;
+		}
+	}
+	&__work-time {
+		position: relative;
+		color: #333333;
+		img {
+			position: absolute;
+			left: -50px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&__holiday {
+		font-weight: 400;
+		text-transform: lowercase;
+	}
+	&__time {
+		font-weight: 600;
+		font-size: 18px;
+	}
+	&__phone {
+		position: relative;
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		img {
+			position: absolute;
+			left: -35px;
+			top: 25%;
+			transform: translateY(-25%);
+		}
+	}
+	&__number {
+		color: #333333;
+		font-weight: 700;
+		font-size: 23px;
+		&:hover{
+			color: #333333;
+			text-decoration: none;
+		}
+	}
+	&__call-link {
+		color: #0089cc;
+		font-weight: 400;
+		font-size: 15px;
+		text-decoration: underline;
+		&:hover{
+			color: #0089cc;
+			text-decoration: none;
+		}
+	}
+}
