@@ -1,0 +1,39 @@
+.form {
+	height: 440px;
+	width: 370px;
+	padding: 40px 50px;
+	background-color: #fff;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	text-align: center;
+	&__header {
+		margin-bottom: 40px;
+		font-family: "OpenSans";
+		font-size: 20px;
+		color: #333;
+		font-weight: 700;
+		span {
+			font-size: 24px;
+		}
+	}
+	input {
+		margin-bottom: 20px;
+		height: 60px;
+		border: 1px solid #d1d1d1;
+		border-radius: 5px;
+		text-align: center;
+		font-family: "OpenSans";
+		color: #999;
+		font-size: 15px;
+		font-weight: 400;
+	}
+	&__conf {
+		margin-top: 20px;
+		font-family: "OpenSans";
+		font-size: 11px;
+		color: #666;
+		font-weight: 300;
+	}
+}

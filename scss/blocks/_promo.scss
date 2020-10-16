@@ -1,4 +1,63 @@
 .promo {
 	min-height: 640px;
 	background: url('../img/main_bg.jpg') center (center/cover) no-repeat;
+	padding: 100px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__offer {
+		height: 440px;
+		max-width: 500px;
+		padding: 20px 0 40px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__header {
+		font-family: "OpenSans";
+		font-weight: 700;
+		font-size: 26px;
+		color: #333333;
+		span {
+			font-size: 55px;
+		}
+	}
+	&__icons {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__icon {
+		position: relative;
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		background-color: #0d8fe3;
+	}
+	&__img-first {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) translateY(50%);
+		top: -50%;
+	}
+	&__img-second {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) translateY(20%);
+		top: -20%;
+	}
+	&__icon-text {
+		position: absolute;
+		font-family: "OpenSansCondensed";
+		color: #fff;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 50px;
+		text-align: center;
+	}
+	
 }
