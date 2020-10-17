@@ -1,0 +1,28 @@
+.title {
+	position: relative;
+	font-family: "OpenSans";
+	color: #333333;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 65px;
+		right: 50%;
+		display: block;
+		height: 1px;
+		width: 62px;
+		background: linear-gradient(to right, #e8f4fc, #289be6);
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 65px;
+		left: 50%;
+		display: block;
+		height: 1px;
+		width: 62px;
+		background: linear-gradient(to left, #e8f4fc, #289be6);
+	}
+}

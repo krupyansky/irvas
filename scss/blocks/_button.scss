@@ -1,4 +1,5 @@
 .button {
+	outline: 0 none !important;
 	height: 80px;
 	width: 270px;
 	background: linear-gradient(to top, #ffb501, #ffed26);
@@ -10,4 +11,8 @@
 	color: #000;
 	font-weight: 700;
 	text-transform: uppercase;
+	&_calculate {
+		width: 260px;
+		height: 65px;
+	}
 }

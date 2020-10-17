@@ -14,3 +14,10 @@ testWebP(function (support) {
 	}
 });
 
+$(document).ready(function(){
+	$('div.product__types-first').on('click', 'div:not(.product__type_active)', function() {
+        $(this)
+          .addClass('product__type_active').siblings().removeClass('product__type_active')
+          .closest('div.container').find('div.product__types-second').removeClass('product__types-second_active').eq($(this).index()).addClass('product__types-second_active');
+    });
+});
