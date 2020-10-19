@@ -43,11 +43,38 @@
 	&__work-time {
 		position: relative;
 		color: #333333;
-		img {
+	}
+	&__clock {
+		position: absolute;
+		left: -50px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		border: 2px solid #a5a5a5;
+		&:before {
 			position: absolute;
-			left: -50px;
-			top: 50%;
-			transform: translateY(-50%);
+			content: '';
+			display: block;
+			width: 2px;
+			height: 12px;
+			background: #a5a5a5;
+			top: 25%;
+			left: 50%;
+			transform: translate(-50%, -25%);
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			display: block;
+			width: 2px;
+			height: 9px;
+			background: #a5a5a5;
+			transform-origin:top left;
+			top: 85%;
+			left: 50%;
+			transform: translate(-50%, -85%) rotate(-45deg);
 		}
 	}
 	&__holiday {

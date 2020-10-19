@@ -37,3 +37,9 @@ $(document).ready(function(){
         $(this).addClass('decoration__type-content-color_active');
     });
 });
+
+// Timer
+
+@@include('timer.js');
+
+// Timer

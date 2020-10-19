@@ -1,0 +1,25 @@
+.pay {
+	padding: 80px 0;
+	&__header {
+		font-family: "OpenSans";
+		color: #333;
+		font-size: 30px;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__items {
+		margin-top: 85px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&_item {
+		width: 33.333%;
+		span {
+			margin-left: 30px;
+			font-family: "OpenSans";
+			color: #000;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}

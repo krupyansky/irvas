@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<title>Irvas</title>
 </head>
 <body>
@@ -22,7 +23,8 @@
 			<button class="header__call">Вызвать<br>замерщика</button>
 
 			<div class="header__work-time">
-				<img src="img/icons/clock.png" alt="Clock">
+				<div class="header__clock"></div>
+
 				<div class="header__holiday">без выходных</div>
 				<div class="header__time">9:00 - 18:00</div>
 			</div>
@@ -570,7 +572,238 @@
 		</div>
 	</section>
 
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="title">Наши работы</h2>
+			
+			<div class="portfolio__works">
+
+				<a href="img/section4/first_work.jpg" class="portfolio__work" data-fancybox="gallery-1">
+					<img src="img/section4/first_work.jpg" alt="First work">
+				</a>
+				<a href="img/section4/second_work.jpg" class="portfolio__work" data-fancybox="gallery-2">
+					<img src="img/section4/second_work.jpg" alt="Second work">
+				</a>
+				<a href="img/section4/third_work.jpg" class="portfolio__work" data-fancybox="gallery-3">
+					<img src="img/section4/third_work.jpg" alt="Third work">
+				</a>
+				<a href="img/section4/forth_work.jpg" class="portfolio__work" data-fancybox="gallery-4">
+					<img src="img/section4/forth_work.jpg" alt="Forth work">
+				</a>
+
+
+				<a href="img/section4/fifth_work.jpg" class="portfolio__work" data-fancybox="gallery-5">
+					<img src="img/section4/fifth_work.jpg" alt="Fifth work">
+				</a>
+				<a href="img/section4/first_work.jpg" class="portfolio__work portfolio__work_hide" data-fancybox="gallery-5"></a>
+
+				<a href="img/section4/sixth_work.jpg" class="portfolio__work" data-fancybox="gallery-6">
+					<img src="img/section4/sixth_work.jpg" alt="Sixth work">
+				</a>
+				<a href="img/section4/second_work.jpg" class="portfolio__work portfolio__work_hide" data-fancybox="gallery-6"></a>
+
+				<a href="img/section4/seventh_work.jpg" class="portfolio__work" data-fancybox="gallery-7">
+					<img src="img/section4/seventh_work.jpg" alt="Seventh work">
+				</a>
+				<a href="img/section4/third_work.jpg" class="portfolio__work portfolio__work_hide" data-fancybox="gallery-7"></a>
+
+				<a href="img/section4/eigth_work.jpg" class="portfolio__work" data-fancybox="gallery-8">
+					<img src="img/section4/eigth_work.jpg" alt="Eight work">
+				</a>
+				<a href="img/section4/forth_work.jpg" class="portfolio__work portfolio__work_hide" data-fancybox="gallery-8"></a>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="assurance">
+		<div class="container">
+			<h2 class="title title_white">Мы гарантируем вам</h2>
+			
+			<div class="assurance__items">
+				<div class="assurance__item">
+					<img src="img/icons/medal.png" alt="Medal">
+					<span>
+						Высокое качество
+					</span>
+				</div>
+				<div class="assurance__item">
+					<img src="img/icons/list.png" alt="List">
+					<span>
+						Выполнение работ<br>
+						под ключ
+					</span>
+				</div>
+				<div class="assurance__item">
+					<img src="img/icons/alarm-clock.png" alt="Alarm Clock">
+					<span>
+						Монтаж в короткие<br>
+						сроки
+					</span>
+				</div>
+				<div class="assurance__item">
+					<img src="img/icons/piggy-bank.png" alt="Piggy Bank">
+					<span>
+						Цены<br>
+						от производителя
+					</span>
+				</div>
+				<div class="assurance__item">
+					<img src="img/icons/design-tool.png" alt="Design Tool">
+					<span>
+						Бесплатный замер<br>
+						и консультацию
+					</span>
+				</div>
+				<div class="assurance__item">
+					<img src="img/icons/donation.png" alt="Donation">
+					<span>
+						Тепло и уют<br>
+						на балконе
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pay">
+		<div class="container">
+			<div class="pay__header">Вы можете оплатить наши услуги:</div>
+
+			<div class="pay__items">
+				<div class="pay_item">
+					<img src="img/icons/wallet.png" alt="Wallet">
+					<span>Наличными</span>
+				</div>
+				<div class="pay_item">
+					<img src="img/icons/credit-card.png" alt="Credit Card">
+					<span>Банковской картой</span>
+				</div>
+				<div class="pay_item">
+					<img src="img/icons/museum.png" alt="Museum">
+					<span>Безналичный расчет</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="stock">
+		<div class="container">
+			<div class="stock__offer">
+				<div class="stock__header">Акция -60%</div>
+
+				<div class="stock__subheader">
+					Успей сэкономить на остеклении!<br>
+					Только до 23 апреля!
+				</div>
+
+				<div class="stock__timer" id="timer">
+					<div class="stock__timer-header">До завершения акции:</div>
+
+					<div class="stock__timer-items">
+						<div class="stock__timer-item">
+							<div class="stock__timer-number"><div class="stock__timer-inner" id="days"></div></div>
+							<span>дней</span>
+						</div>
+						<div class="stock__timer-item">
+							<div class="stock__timer-number"><div class="stock__timer-inner" id="hours"></div></div>
+							<span>часов</span>
+						</div>
+						<div class="stock__timer-item">
+							<div class="stock__timer-number"><div class="stock__timer-inner" id="minutes"></div></div>
+							<span>минут</span>
+						</div>
+						<div class="stock__timer-item">
+							<div class="stock__timer-number"><div class="stock__timer-inner" id="seconds"></div></div>
+							<span>секунд</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<form action="#" class="form">
+				<div class="form__header">
+					Запишитесь сегодня на<br>
+					<span>БЕСПЛАТНЫЙ ЗАМЕР</span>
+				</div>
+				<input name="name" required placeholder="Введите ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон">
+                <button class="button">Вызвать замерщика!</button>
+                <div class="form__conf">Ваши данные конфиденциальны</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<h2 class="title">Как найти нас</h2>
+
+			<div class="contacts__block">
+				<div class="contacts__map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.2618174047143!2d37.60290921610387!3d55.92749898597198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0YPQuy4g0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1603119676734!5m2!1sru!2sru" allowfullscreen></iframe>
+				</div>
+
+				<div class="contacts__items">
+					<div class="contacts__item">
+						<div class="contacts__item-name">Юридический адрес:</div>
+						<address class="contacts__item-content">
+							ООО «ИРВАС», 127411, г.Москва, Дмитровское<br>
+							шоссе, д.125, корпус 1
+						</address>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__item-name">Юридический адрес:</div>
+						<address class="contacts__item-content">
+							ООО «ИРВАС», 141031, МО, Мытищинский р-он,<br>
+							п.Вешки,Выставочная,д.53
+						</address>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__item-name">Телефон:</div>
+						<a class="contacts__item-content" href="tel:+74956466171">+7 (495) 646-61-71 (многоканальный)</a>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__item-name">E-mail:</div>
+						<a class="contacts__item-content contacts__item-content_email" href="mailto:info@irvasokna.ru">info@irvasokna.ru</a>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__item-name">Режим работы:</div>
+						<div class="contacts__item-content">
+							9:00 - 18:00 без выходных
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ask">
+		<div class="container">
+			<div class="ask__header">
+				<span class="ask__header-first">Остались вопросы?</span>
+				<a href="#" class="ask__header-second">Спросите у нашего специалиста!</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__copy">
+				2017 © Ирвас окна<br>
+				Работаем без выходных
+			</div>
+			<a class="footer__logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+			<div class="footer__contacts">
+				<a class="footer__phone" href="tel:+74956466171">+7 (495) 646-61-71</a>
+				<a class="footer__email" href="mailto:info@irvasokna.ru">info@irvasokna.ru</a>
+			</div>
+		</div>
+	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>

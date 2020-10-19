@@ -26,4 +26,15 @@
 		width: 62px;
 		background: linear-gradient(to left, #e8f4fc, #289be6);
 	}
+	&_white {
+		color: #fff;
+		&:before {
+			content: "";
+			background: linear-gradient(to left, #e8f4fc, #289be6);
+		}
+		&:after {
+			content: "";
+			background: linear-gradient(to right, #e8f4fc, #289be6);
+		}
+	}
 }

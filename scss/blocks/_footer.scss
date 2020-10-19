@@ -1,0 +1,39 @@
+.footer {
+	padding-top: 35px;
+	padding-bottom: 40px;
+	font-family: "OpenSans";
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__copy {
+		font-weight: 400;
+		color: #000;
+		font-size: 15px;
+	}
+	&__logo {}
+	&__contacts {
+		text-align: right;
+	}
+	&__phone {
+		display: block;
+		font-weight: 700;
+		color: #333;
+		font-size: 18px;
+		&:hover {
+			color: #333;
+			text-decoration: none;
+		}
+	}
+	&__email {
+		display: block;
+		font-weight: 400;
+		color: #0090d5;
+		font-size: 14px;
+		text-decoration: underline;
+		&:hover {
+			color: #0090d5;
+			text-decoration: none;
+		}
+	}
+}

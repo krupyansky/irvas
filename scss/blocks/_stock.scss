@@ -1,0 +1,100 @@
+.stock {
+	background: url('../img/man_bg.jpg') center (center/cover) no-repeat;
+	padding: 80px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__offer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__header {
+		font-family: "OpenSans";
+		color: #008cce;
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__subheader {
+		font-family: "OpenSans";
+		color: #000;
+		font-size: 24px;
+		font-weight: 400;
+	}
+	&__timer {
+		width: 260px;
+		height: 160px;
+		border: 1px solid #d1d1d1;
+		border-radius: 5px;
+		padding: 20px 25px 25px 25px;
+		text-align: center;
+		background: #fff;
+	}
+	&__timer-header {
+		font-family: "OpenSans";
+		font-size: 14px;
+		font-weight: 600;
+		color: #000;
+		text-transform: uppercase;
+	}
+	&__timer-items {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__timer-item {
+		span {
+			display: block;
+			margin-top: 14px;
+			font-family: "OpenSans";
+			font-weight: 600;
+			color: #000;
+			font-size: 13px;
+		}
+	}
+	&__timer-number {
+		position: relative;
+		align-items: middle;
+		padding-top:2px;
+		width: 40px;
+		height: 50px;
+		font-family: "OpenSansCondensed";
+		font-weight: 700;
+		font-size: 28px;
+		color: #efefef;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 25px;
+			width: 40px;
+			background: linear-gradient(to bottom, rgba(57,57,57,1), rgba(22,23,23,1));
+			top: 0%;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			z-index: 1;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 25px;
+			width: 40px;
+			background: linear-gradient(to bottom, rgba(56,56,56,1), rgba(21,22,22,1));
+			border-top: 1px solid #000;
+			top: 50%;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			z-index: 1;
+		}	
+	}
+	&__timer-inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -55%);
+		z-index: 2;
+	}
+}
