@@ -8,7 +8,7 @@
 	<title>Irvas</title>
 </head>
 <body>
-	<header class="header">
+	<header id="up" class="header">
 		<div class="container">
 			<div class="header__brand">
 				<a href="#" class="header__logo">
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 
-			<button class="header__call">Вызвать<br>замерщика</button>
+			<button data-modal="consultation" class="header__call">Вызвать<br>замерщика</button>
 
 			<div class="header__work-time">
 				<div class="header__clock"></div>
@@ -32,7 +32,7 @@
 			<div class="header__phone">
 				<img src="img/icons/phone.png" alt="Phone">
 				<a href="tel:+74956466171" class="header__number">+7 (495) 646-61-71</a>
-				<a href="#" class="header__call-link">Заказать обратный звонок</a>
+				<span data-modal="consultation" class="header__call-link">Заказать обратный звонок</span>
 			</div>
 		</div>
 	</header>
@@ -75,13 +75,13 @@
 				</div>
 			</div>
 
-			<form action="#" class="form">
+			<form action="#" class="form" id="order-form-1">
 				<div class="form__header">
 					Запишитесь сегодня на<br>
 					<span>БЕСПЛАТНЫЙ ЗАМЕР</span>
 				</div>
 				<input name="name" required placeholder="Введите ваше имя" type="text"> 
-                <input name="phone" required placeholder="Ваш телефон">
+                <input name="phone" required placeholder="+7 (___) ___-__-__">
                 <button class="button">Вызвать замерщика!</button>
                 <div class="form__conf">Ваши данные конфиденциальны</div>
 			</form>
@@ -558,13 +558,13 @@
 					</div>
 				</div>
 
-				<form action="#" class="form">
+				<form action="#" class="form" id="order-form-2">
 					<div class="form__header">
 						Запишитесь сегодня на<br>
 						<span>БЕСПЛАТНЫЙ ЗАМЕР</span>
 					</div>
 					<input name="name" required placeholder="Введите ваше имя" type="text"> 
-	                <input name="phone" required placeholder="Ваш телефон">
+	                <input name="phone" required placeholder="+7 (___) ___-__-__">
 	                <button class="button">Вызвать замерщика!</button>
 	                <div class="form__conf">Ваши данные конфиденциальны</div>
 				</form>
@@ -723,13 +723,13 @@
 				</div>
 			</div>
 
-			<form action="#" class="form">
+			<form action="#" class="form" id="order-form-3">
 				<div class="form__header">
 					Запишитесь сегодня на<br>
 					<span>БЕСПЛАТНЫЙ ЗАМЕР</span>
 				</div>
 				<input name="name" required placeholder="Введите ваше имя" type="text"> 
-                <input name="phone" required placeholder="Ваш телефон">
+                <input name="phone" required placeholder="+7 (___) ___-__-__">
                 <button class="button">Вызвать замерщика!</button>
                 <div class="form__conf">Ваши данные конфиденциальны</div>
 			</form>
@@ -783,7 +783,7 @@
 		<div class="container">
 			<div class="ask__header">
 				<span class="ask__header-first">Остались вопросы?</span>
-				<a href="#" class="ask__header-second">Спросите у нашего специалиста!</a>
+				<span data-modal="consultation" class="ask__header-second">Спросите у нашего специалиста!</span>
 			</div>
 		</div>
 	</section>
@@ -801,6 +801,49 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="overlay">
+
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <form action="#" class="form">
+				<div class="form__header">
+					Закажите сейчас<br>
+					<span>обратный звонок</span>
+				</div>
+				<input name="name" required placeholder="Введите ваше имя" type="text"> 
+                <input name="phone" required placeholder="+7 (___) ___-__-__">
+                <button class="button">Отправить заявку</button>
+                <div class="form__conf">Ваши данные конфиденциальны</div>
+			</form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <form action="#" class="form">
+				<div class="form__header">
+					Рассчитать стоимость<br>
+					<span>со скидкой</span>
+				</div>
+				<input name="name" required placeholder="Введите ваше имя" type="text"> 
+                <input name="phone" required placeholder="+7 (___) ___-__-__">
+                <button class="button">Рассчитать стоимость</button>
+                <div class="form__conf">Ваши данные конфиденциальны</div>
+			</form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close modal__close_mini">&times;</div>
+            <div class="modal__header">Спасибо за вашу заявку!</div>
+            <div class="modal__subheader">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
+        </div>
+
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="img/icons/up.svg" alt="To Top">
+    </a>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

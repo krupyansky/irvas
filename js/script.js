@@ -36,10 +36,50 @@ $(document).ready(function(){
         $('span.decoration__type-content-color_active').removeClass('decoration__type-content-color_active');
         $(this).addClass('decoration__type-content-color_active');
     });
+
+    //Modal
+    @@include('modal.js');
+    //Modal
+
+    // Validate
+    @@include('validate.js');
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символа")
+                  },
+                phone: "Пожалуйста, введите свой номер телефона",
+            }
+        });
+    };
+
+    validateForms('#order-form-1');
+    validateForms('#order-form-2');
+    validateForms('#order-form-3');
+    validateForms('#consultation form');
+    validateForms('#order form');
+    // Validate
+
+    // MaskedInput
+    @@include('maskedinput.js');
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+    // MaskedInput
+
+    // PageUp
+    @@include('pageup.js');
+    // PageUp
 });
 
 // Timer
-
 @@include('timer.js');
-
 // Timer
