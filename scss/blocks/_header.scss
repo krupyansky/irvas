@@ -1,6 +1,6 @@
 .header {
 	font-family: "OpenSans";
-	height: 100px;
+	min-height: 100px;
 	padding: 20px 0;
 	.container {
 		display: flex;
@@ -9,7 +9,7 @@
 	}
 	&__brand {
 		display: flex;
-		align-items: center;
+		align-items: center;		
 	}
 	&__logo {
 		display: block;
@@ -79,6 +79,7 @@
 	}
 	&__holiday {
 		font-weight: 400;
+		font-size: 14px;
 		text-transform: lowercase;
 	}
 	&__time {

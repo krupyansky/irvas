@@ -7,7 +7,7 @@
 		justify-content: space-between;
 	}
 	&__offer {
-		height: 440px;
+		min-height: 440px;
 		max-width: 500px;
 		padding: 20px 0 40px 0;
 		display: flex;
@@ -30,7 +30,7 @@
 	&__icon {
 		position: relative;
 		width: 110px;
-		height: 110px;
+		min-height: 110px;
 		border-radius: 50%;
 		background-color: #0d8fe3;
 	}
